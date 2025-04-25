@@ -8,7 +8,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Employee extends Person {
+public class Employee{
 	@Id
 	private String empNo;
 	private String name;
