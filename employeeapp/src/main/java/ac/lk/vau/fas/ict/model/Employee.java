@@ -11,6 +11,9 @@ import jakarta.persistence.ManyToOne;
 public class Employee extends Person {
 	@Id
 	private String empNo;
+	private String name;
+	private int age;
+	private String gender;
 	private double salary;
 	@ManyToOne
 	private Department department; // one - many relationship in employee and department
