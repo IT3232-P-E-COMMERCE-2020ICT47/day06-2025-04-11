@@ -15,10 +15,6 @@ public class Project {
 	private String name;
 	private long totalcost;
 	@ManyToMany
-	@JoinTable(name="project_assignments",
-    joinColumns = @JoinColumn(name="pro_id"),
-    inverseJoinColumns = @JoinColumn(name="emp_id"))
-	
 	private List<Employee>employees;
 
 	
